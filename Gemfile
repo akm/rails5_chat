@@ -30,15 +30,50 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem "twitter-bootstrap-rails"
+
+gem 'devise'
+# https://github.com/CanCanCommunity/cancancan
+gem 'cancancan'
+
+gem "kaminari"
+
+# https://github.com/brainspec/enumerize
+gem 'enumerize'
+
+# https://github.com/sinsoku/pretty_validation
+# http://sinsoku.hatenablog.com/entry/2015/11/15/103924
+gem 'pretty_validation', git: "https://github.com/akm/pretty_validation.git"
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem "rspec"
+  gem "rspec-rails"
+  gem 'simplecov'     , require: false
+  gem 'simplecov-rcov', require: false
+  gem "pry-rails"
+  gem "pry-byebug"
+  gem "pry-stack_explorer"
+  gem "fuubar"
+  gem "factory_girl"
+  gem "factory_girl_rails"
+  gem "annotate"
+  gem "rails_best_practices"
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
+  gem "better_errors"
+  gem 'binding_of_caller'
+
+  gem "schema_comments"
+
+  # https://github.com/flyerhzm/bullet
+  gem 'bullet'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
