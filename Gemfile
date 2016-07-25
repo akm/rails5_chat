@@ -70,8 +70,6 @@ group :development do
   gem "better_errors"
   gem 'binding_of_caller'
 
-  gem "schema_comments"
-
   # https://github.com/flyerhzm/bullet
   gem 'bullet'
 end
